@@ -30,7 +30,7 @@ export const { pending, success, fail } = createActions(
 const reducer = handleActions<AuthState, string>(
   {
     //액션의 타입을 바탕으로 리듀서 로직이 만들어짐
-    //기존의 state를 받아서 loadgin 등 바뀜
+    //기존의 state를 받아서 loading 등 바뀜
     PENDING: (state) => ({
       ...state,
       loading: true,

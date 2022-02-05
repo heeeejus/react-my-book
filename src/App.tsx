@@ -1,7 +1,7 @@
 import React from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import { Route, Switch } from "react-router-dom";
-import add from "./pages/add";
+import add from "./pages/Add";
 import Detail from "./pages/Detail";
 import Edit from "./pages/Edit";
 import Home from "./pages/Home";

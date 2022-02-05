@@ -1,13 +1,10 @@
-import React from "react";
-import { useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
 import ListContainer from "../containers/ListContainer";
-import { RootState } from "../types";
+import useToken from "../hooks/useToken";
 
 export default function Home() {
-  const token = useSelector<RootState, string | null>(
-    (state) => state.auth.token
-  );
+  //로그인이 되어있는지 확인
+  const token = useToken();
 
   if (token === null) {
     return <Redirect to="/signin" />;
